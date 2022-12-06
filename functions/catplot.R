@@ -40,6 +40,7 @@ catplot <- function(framework = c("nasem", "gds"), plot_height_mod = 1) {
   # For long-formatted data, want to re-level area, from highest mean score to 
   # lowest mean score
   
+  # Provides mean scores that I can use for clustering area scores
   # Start by calculating summary statistics
   options(dplyr.summarise.inform = FALSE)
   area_stats <- scores_long %>%
